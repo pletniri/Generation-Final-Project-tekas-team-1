@@ -1,105 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="styles.css" />
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Document</title>
 </head>
+
 <body>
-    <header class="header">
-        <nav class="navbar navbar-expand-lg bg-light sticky-top">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#"
-              ><img class="nav-logo" src="./images/logo.png" alt="company logo"
-            /></a>
-            <input
-              class="form-control me-2 search"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div
-              class="collapse navbar-collapse justify-content-end"
-              id="navbarSupportedContent"
-            >
-              <ul class="navbar-nav mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+  <header class="header">
+    <nav class="navbar navbar-expand-lg bg-light sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img class="nav-logo" src="./images/logo.png" alt="company logo" /></a>
+        <input class="form-control me-2 search" type="search" placeholder="Search" aria-label="Search" />
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Shop
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider" />
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="about.html">About</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Shop
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li>
-                      <hr class="dropdown-divider" />
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">Something else here</a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link">Help</a>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
                 </li>
               </ul>
-              <button class="btn btn-outline-success ml-5" type="submit">
-                Your Cart
-              </button>
-            </div>
-          </div>
-        </nav>
-      </header>
-      <main>
-        <div class="container">
-            <div class="d-flex flex-column justify-content-center align-items-center">
-                
-                    <h1 class="text-center mt-5">Pandas shop</h1>
-                    
-                    <div class="d-flex flex-row">
-                    <input
-                    class="form-control search my-5"
-                    type="search"
-                    placeholder="Search"
-                    aria-label="Search"
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">Help</a>
+            </li>
+          </ul>
+          <button class="btn btn-outline-success ml-5" type="submit">
+            Your Cart
+          </button>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="container">
+      <div class="d-flex flex-column justify-content-center align-items-center">
 
-                  />
-                  <input class="btn btn-primary" type="submit" value="Submit">
-                  </div>
-                  
-                 
+        <h1 class="text-center mt-5">Pandas shop</h1>
+
+        <div class="d-flex flex-row">
+          <input class="form-control search my-5" type="search" placeholder="Search" aria-label="Search" />
+          <input class="btn btn-primary" type="submit" value="Submit">
         </div>
 
+        <div class="row">
+          <div class="col-12 text-center">
+            <h1>Featured Categories</h1> <br>
+            <span>
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+              ea commodo consequat.
+            </span>
+          </div>
+        </div>
+
+        <div class="container text-center">
+
+          <div class="row row-cols-6">
+
+            <div class="col"></div>
+
+            <div class="col d-flex justify-content-between my-4">
+              <div class="card text-center border-secondary" style="width: 14rem; height: 14rem;">
+                <img src="images/pinkPanda.png" class="card-img-top" alt="pinkPanda">
+                <div class="card-body">
+                  <h5 class="card-title">Pink Pandas</h5>
+                  <a href="#" class="btn btn-primary">Buy</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col d-flex justify-content-between my-4">
+              <div class="card text-center border-secondary" style="width: 14rem;">
+                <img src="images/pinkPanda.png" class="card-img-top" alt="pinkPanda">
+                <div class="card-body">
+                  <h5 class="card-title">Pink Pandas</h5>
+                  <a href="#" class="btn btn-primary">Buy</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col d-flex justify-content-between my-4">
+              <div class="card text-center border-secondary" style="width: 14rem;">
+                <img src="images/pinkPanda.png" class="card-img-top" alt="pinkPanda">
+                <div class="card-body">
+                  <h5 class="card-title">Pink Pandas</h5>
+                  <a href="#" class="btn btn-primary">Buy</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col d-flex justify-content-between my-4">
+              <div class="card text-center border-secondary" style="width: 14rem;">
+                <img src="images/pinkPanda.png" class="card-img-top" alt="pinkPanda">
+                <div class="card-body">
+                  <h5 class="card-title">Pink Pandas</h5>
+                  <a href="#" class="btn btn-primary">Buy</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col"></div>
+
+            <div class="row">
+              <div class="col-4">
+                <div class="image"><img src="images/newsletter.jpg" /></div>
+
+              </div>
+              <div class="col-8">
+                <div class="input-group mb-3">
+                  <input type="text" class="form-control" placeholder="Recipient's username"
+                    aria-label="Recipient's username" aria-describedby="button-addon2">
+                  <button class="btn btn-outline-secondary" type="button" id="button-addon2">Button</button>
+                </div>
+              </div>
+            </div>
+        
+        
 
       </main>
       <script
