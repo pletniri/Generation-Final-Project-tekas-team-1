@@ -8,6 +8,55 @@
     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
   <link rel="stylesheet" href="styles.css" />
   <title>Document</title>
+  
+  <style>
+    .newsletter {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      grid-auto-rows: minmax(100px, auto);
+      grid-gap: 1em;
+      margin-bottom: 1px;
+    }
+    .image-newsletter {
+      align-self: flex-start;
+    }
+
+    .productName {
+      display: grid;
+      grid-auto-rows: minmax(100px, auto);
+      grid-gap: 1em;
+      text-align: center;
+    }
+
+    .list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-auto-rows: ;
+
+
+    }
+    .footer {
+      grid-column: 1/3;
+
+
+    }
+
+    .featured {
+      display: grid;
+      grid-template-columns: 1fr;      
+      text-align: center;
+      grid-auto-rows: minmax(100px, auto);
+      align-self:end; 
+      background: #ddd;
+    } 
+
+    .newsletter > div:nth-child(odd) {
+      background: #eee;
+      padding: 1em;
+    }
+
+    
+  </style>
 </head>
 
 <body>
@@ -55,7 +104,9 @@
       </div>
     </nav>
   </header>
+  
   <main>
+
     <div class="container">
       <div class="d-flex flex-column justify-content-center align-items-center">
 
@@ -66,80 +117,203 @@
           <input class="btn btn-primary" type="submit" value="Submit">
         </div>
 
-        <div class="row">
-          <div class="col-12 text-center">
-            <h1>Featured Categories</h1> <br>
-            <span>
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-              ea commodo consequat.
-            </span>
+    
+
+       <div class="featured">
+        <h2>Featured categories</h2>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta nesciunt tenetur laborum! Perspiciatis reprehenderit voluptatum sit. Necessitatibus dignissimos amet labore.
+
+      </div>
+      <div class="fourCategories my-0">
+
+        <div class="row row-cols-6 my-0">
+
+          <div class="col"></div>
+
+          <div class="col d-flex justify-content-between my-4">
+            <div class="card text-center border-secondary" style="width: 16rem;">
+              <img src="images/pinkPanda.png" class="card-img-top" alt="pinkPanda">
+              <div class="card-body">
+                <h5 class="card-title">Pink Pandas</h5>
+                <a href="#" class="btn btn-primary">Buy</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col d-flex justify-content-between my-4">
+            <div class="card text-center border-secondary" style="width: 16rem;">
+              <img src="images/pinkPanda.png" class="card-img-top" alt="pinkPanda">
+              <div class="card-body">
+                <h5 class="card-title">Pink Pandas</h5>
+                <a href="#" class="btn btn-primary">Buy</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col d-flex justify-content-between my-4">
+            <div class="card text-center border-secondary" style="width: 16rem;">
+              <img src="images/pinkPanda.png" class="card-img-top" alt="pinkPanda">
+              <div class="card-body">
+                <h5 class="card-title">Pink Pandas</h5>
+                <a href="#" class="btn btn-primary">Buy</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col d-flex justify-content-between my-4">
+            <div class="card text-center border-secondary" style="width: 16rem;">
+              <img src="images/pinkPanda.png" class="card-img-top" alt="pinkPanda">
+              <div class="card-body">
+                <h5 class="card-title">Pink Pandas</h5>
+                <a href="#" class="btn btn-primary">Buy</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col"></div>
+          </div>
+
+      </div>
+      <div class="emptyRow"> </div>
+
+      <div class="newsletter">
+
+        <div class="image-newsletter">
+          <img src="images/newsletter.jpg" width ="100" height="100" alt="newsletter">
+
+        </div>
+      <div>
+           <div class="subscribe">
+            <h3>Newsletter</h3>
+          <div class="input-group mb-3">            
+            <input type="text" class="form-control" placeholder="Email address" aria-label="Email address" aria-describedby="button-addon2">
+            <button class="btn btn-outline-secondary" type="button" id="button-addon2">Subscribe</button>
           </div>
         </div>
 
-        <div class="container text-center">
+      </div>
 
-          <div class="row row-cols-6">
 
-            <div class="col"></div>
-
-            <div class="col d-flex justify-content-between my-4">
-              <div class="card text-center border-secondary" style="width: 14rem; height: 14rem;">
-                <img src="images/pinkPanda.png" class="card-img-top" alt="pinkPanda">
-                <div class="card-body">
-                  <h5 class="card-title">Pink Pandas</h5>
-                  <a href="#" class="btn btn-primary">Buy</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col d-flex justify-content-between my-4">
-              <div class="card text-center border-secondary" style="width: 14rem;">
-                <img src="images/pinkPanda.png" class="card-img-top" alt="pinkPanda">
-                <div class="card-body">
-                  <h5 class="card-title">Pink Pandas</h5>
-                  <a href="#" class="btn btn-primary">Buy</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col d-flex justify-content-between my-4">
-              <div class="card text-center border-secondary" style="width: 14rem;">
-                <img src="images/pinkPanda.png" class="card-img-top" alt="pinkPanda">
-                <div class="card-body">
-                  <h5 class="card-title">Pink Pandas</h5>
-                  <a href="#" class="btn btn-primary">Buy</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col d-flex justify-content-between my-4">
-              <div class="card text-center border-secondary" style="width: 14rem;">
-                <img src="images/pinkPanda.png" class="card-img-top" alt="pinkPanda">
-                <div class="card-body">
-                  <h5 class="card-title">Pink Pandas</h5>
-                  <a href="#" class="btn btn-primary">Buy</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col"></div>
-
-            <div class="row">
-              <div class="col-4">
-                <div class="image"><img src="images/newsletter.jpg" /></div>
-
-              </div>
-              <div class="col-8">
-                <div class="input-group mb-3">
-                  <input type="text" class="form-control" placeholder="Recipient's username"
-                    aria-label="Recipient's username" aria-describedby="button-addon2">
-                  <button class="btn btn-outline-secondary" type="button" id="button-addon2">Button</button>
-                </div>
-              </div>
-            </div>
+      <div class="productName">
+        <div class="browse">
+          <h3>Header regarding your product</h3>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur optio excepturi maxime labore omnis reprehenderit consequatur alias aperiam. Recusandae architecto reprehenderit voluptatum aliquam rerum repudiandae, fuga eveniet quam dolorem similique.
+          <button type="button" class="btn btn-secondary">Browse All</button>
+        </div>
         
-        
+
+      </div>
+      <div class="list">
+        <div class="box1">
+          <div class="card mb-3" style="max-width: 350px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="..." class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="box2">
+          <div class="card mb-3" style="max-width: 350px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="..." class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="box3">
+          <div class="card mb-3" style="max-width: 350px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="..." class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="box4">
+          <div class="card mb-3" style="max-width: 350px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="..." class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="box5">
+          <div class="card mb-3" style="max-width: 350px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="..." class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="box6">
+          <div class="card mb-3" style="max-width: 350px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="..." class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+      <div class="footer">
+
+      </div>
+    
+
+
+    
+
+             
+
+           
 
       </main>
       <script
